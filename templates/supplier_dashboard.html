@@ -1,0 +1,109 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="supplier-dashboard">
+  <header class="dashboard-header">
+    <h1>Welcome, {{ user.username }}</h1>
+    <p>Your Supplier Dashboard</p>
+  </header>
+
+  <section class="overview">
+    <h2>Overview</h2>
+    <div class="stats">
+      <div class="stat">
+        <h3>Total Products</h3>
+        <p>8</p>
+      </div>
+      <div class="stat">
+        <h3>Pending Orders</h3>
+        <p>10</p>
+      </div>
+      <div class="stat">
+        <h3>Farmer Requests</h3>
+        <p>4</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="manage-products">
+    <h2>Your Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="{% static 'images/fertilizer.jpg' %}" alt="Fertilizer" />
+        <h3>Fertilizer</h3>
+        <p>Price: $50/bag</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/beans.jpg' %}" alt="Beans Seeds" />
+        <h3>Wheat Seeds</h3>
+        <p>Price: $30/bag</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/Wateringcan.jpg' %}" alt="Watering can" />
+        <h3>Watering Cane</h3>
+        <p>Price: $10/1 Cane</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/gumboots.jpg' %}" alt="Gumboots" />
+        <h3>Gumboots</h3>
+        <p>Price: $25/1 Pair</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/cornseeds.jpg' %}" alt="Corn Seeds" />
+        <h3>Corn Seeds</h3>
+        <p>Price: $30/bag</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/gnutsseeds.jpg' %}" alt="Gnuts Seeds" />
+        <h3>Groundnuts Seeds</h3>
+        <p>Price: $40/bag</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/hoe.jpg' %}" alt="hoe" />
+        <h3>Hoe</h3>
+        <p>Price: $5/1 Piece</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/wheelbarrow.jpg' %}" alt="wheel barrow" />
+        <h3>Wheel Barrow</h3>
+        <p>Price: $36/1</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/chickfeeds.jpg' %}" alt="Chicken feed" />
+        <h3>Chicken Feeds</h3>
+        <p>Price: $40/bag</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/gloves.jpg' %}" alt="Gloves" />
+        <h3>Gloves</h3>
+        <p>Price: $3/1 Pair</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <!-- Add more product cards dynamically -->
+    </div>
+    <button class="add-product">Add New Product</button>
+  </section>
+
+  <section class="farmer-requests">
+    <h2>Farmer Requests</h2>
+    <div class="request">
+      <h3>John Doe</h3>
+      <p>Request: 20 bags of fertilizer</p>
+      <button class="respond-btn">Respond</button>
+    </div>
+    <div class="request">
+      <h3>Jane Smith</h3>
+      <p>Request: 50 bags of wheat seeds</p>
+      <button class="respond-btn">Respond</button>
+    </div>
+    <!-- Add more farmer requests dynamically -->
+  </section>
+</div>
+{% endblock %}

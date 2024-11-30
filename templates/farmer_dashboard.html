@@ -1,0 +1,109 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="farmer-dashboard">
+  <header class="dashboard-header">
+    <h1>Welcome, {{ user.username }}</h1>
+    <p>Your Farm Connect Dashboard</p>
+  </header>
+
+  <section class="overview">
+    <h2>Overview</h2>
+    <div class="stats">
+      <div class="stat">
+        <h3>Active Listings</h3>
+        <p>12</p>
+      </div>
+      <div class="stat">
+        <h3>Pending Orders</h3>
+        <p>5</p>
+      </div>
+      <div class="stat">
+        <h3>Investment Offers</h3>
+        <p>3</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-listings">
+    <h2>Your Product Listings</h2>
+    <div class="products">
+      <div class="product">
+        <img src="{% static 'images/corn.jpg' %}" alt="Corn" />
+        <h3>Corn</h3>
+        <p>Price: $200/ton</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/beans.jpg' %}" alt="Beans" />
+        <h3>Beans</h3>
+        <p>Price: $180/ton</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/bananas.jpg' %}" alt="Bananas" />
+        <h3>Bananas</h3>
+        <p>Price: $200/ton</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/groundnuts.jpg' %}" alt="Groundnuts" />
+        <h3>Groundnuts</h3>
+        <p>Price: $100/ton</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/cassava.jpg' %}" alt="Cassava" />
+        <h3>Cassava</h3>
+        <p>Price: $175/ton</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/pineapple.jpg' %}" alt="Pineapple" />
+        <h3>Pineapple</h3>
+        <p>Price: $50/ton</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/rice.jpg' %}" alt="Rice" />
+        <h3>Rice</h3>
+        <p>Price: $63/ton</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/soyabeans.jpg' %}" alt="Soya Beans" />
+        <h3>Soya Beans</h3>
+        <p>Price: $45/ton</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/coffe.jpg' %}" alt="Coffe" />
+        <h3>Coffe</h3>
+        <p>Price: $275/ton</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <div class="product">
+        <img src="{% static 'images/goat.jpg' %}" alt="Goat" />
+        <h3>Rice</h3>
+        <p>Price: $63/ 1 Piece</p>
+        <button class="edt-btn">Edit</button>
+      </div>
+      <!-- Add more product cards dynamically -->
+    </div>
+    <button class="add-product">Add New Product</button>
+  </section>
+
+  <section class="investment-opportunities">
+    <h2>Investment Opportunities</h2>
+    <div class="opportunity">
+      <h3>Greenhouse Expansion</h3>
+      <p>Requested Amount: $10,000</p>
+      <button class="details-btn">View Details</button>
+    </div>
+    <div class="opportunity">
+      <h3>Solar Irrigation System</h3>
+      <p>Requested Amount: $5,000</p>
+      <button class="details-btn">View Details</button>
+    </div>
+    <!-- Add more investment opportunities dynamically -->
+  </section>
+</div>
+{% endblock %}
